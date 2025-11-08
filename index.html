@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yesteryear&display=swap" rel="stylesheet">
     <title>Narière Website</title>
 </head>
-<body>
-    <header>
+<body id="top">
+    <header >
         <div class="header-left">
             <div class="logo">
                 <a href="index.html"><img src="./images/NarierelogoSVG.svg"  alt="Narière Logo"></a>
             </div>
-            <nav>
+            <nav class="site-nav">
                 <ul>
                     <li><a href="#index">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
@@ -28,14 +28,14 @@
         </div>
     </header>
     <main>
-        <div class="home-container">
+        <div class="home-container" id="index">
             <section class="welcome-section">
                 <h2 class="welcome">Welcome to Narière</h2>
                 <p>Providing you with affordable Luxury Bags</p>
             </section>
         </div>
 
-        <div class="about-us-container">
+        <div class="about-us-container" id="about-us">
             <section>
                 <h2 class="about-us-heading">About Us</h2>
                 <div class="about-us-text">
@@ -52,7 +52,7 @@
                 </div>
             </section>
         </div>
-        <section class="products">
+        <section class="products" id="products">
             <h2 class="prods">Our Products</h2>
             <div class="products-container">
                 <div class="product-item">
@@ -93,9 +93,9 @@
             </div>
         </section>
 
-        <div class="testimonials-container">
-            <section>
-                <h2 class="testimonial-heading">Testimonials</h2>
+        <div class="testimonials-container" id="testimonials">
+            <h2 class="testimonial-heading">Testimonials</h2>
+            <div>
                 <div class="customer-testimonial">
                     <figure>
                         <img src="./images/customer.jpg" alt="customer1" width="100px" height="100px">
@@ -125,18 +125,25 @@
                         </figcaption>
                     </figure>
                 </div>
-            </section>
+            </div>
         </div>
 
         <div class="blogs-container">
             <section id="blogs">
                 <h2 class="blogs-heading">Blogs</h2>
                 <div class="blog-content">
+                    <img src="./images/LocalBagBrands_inside.jpg">
                     <h3 class="blog-title">Luxurious bag from the Philippines</h3>
                     <a href="/*link to blog page*/">Read more</a>
                 </div>
                 <div class="blog-content">
-                    <h3 class="blog-title">Philippine made bags</h3>
+                    <img src="./images/BuriBagsHandmade_800x.jpg">
+                    <h3 class="blog-title">Philippine bags made from traditional material</h3>
+                    <a href="/*link to blog page*/">Read more</a>
+                </div>
+                <div class="blog-content">
+                    <img src="./images/2KILUS.jpg">
+                    <h3 class="blog-title">Bag made from recycled products</h3>
                     <a href="/*link to blog page*/">Read more</a>
                 </div>
             </section>
@@ -144,7 +151,7 @@
 
         <hr>
 
-        <div class="contact-container">
+        <footer class="contact-container" id="contact">
             <section id="contact" class="contact">
                 <h2 class="contact-heading">Contact Us</h2>
                 <p>Feel free to reach out to us through the form below:</p>
@@ -178,8 +185,9 @@
                     sample-email@company.com
                 </p>
             </section>
-        </div>
+        </footer>
     </main>
 </body>
+<a href="#top" class="home-btn" title="Go Home">🏠</a>
 </html>
 

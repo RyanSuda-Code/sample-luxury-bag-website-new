@@ -12,6 +12,12 @@ header {
     width: 100%;
     height: 175px;
     background-color: #e6d9c0;
+    /* return this if you want to make the header in fixed position at the top of the screen
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    */
 }
 
 .header-left {
@@ -32,11 +38,20 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 20px;
 }
 
 ul a {
+    color: black;
     text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    padding: 10px 30px;
+}
+
+ul a:hover {
+    background-color: lightgoldenrodyellow;
+    transition: background-color 0.3s ease;
 }
 
 /*Home Container*/
@@ -85,12 +100,12 @@ ul a {
 /*about-us container*/
 .about-us-container {
     width: 100%;
-    height: auto;
-    margin: 0;
+    padding: 10px;
+    margin: 100px auto;
 }
 
 .about-us-text {
-    width: 85%;
+    max-width: 85%;
     height: auto;
     display: flex;
     align-items: center;
@@ -130,20 +145,137 @@ ul a {
     width: 90%;
     height: auto;
     text-align: center;
-    margin: auto
+    margin: 100px auto;
+
 }
 
 .products-container {
-    width: 1000px; /*Fix this to make it pleasing or not out of place in the monitor*/
+    width: 100%;
+    max-width: 1300px; /* Move this later to media query Limit the maximum width */
     height: auto;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;/*Align the items at the start of the container’s flex direction*/
     align-items: center;
     flex-direction: row;
     gap: 30px;
-    overflow: hidden;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.product-item {
+    min-width: 250px; /* Move this later to media query Limit the minimum width */
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.product-item img {
+    border-radius: 10px;
+}
+
+.product-item:hover {
+    background-color: lightgoldenrodyellow;
+    transform: scale(1.1);
+    transition: transform 0.3s, background-color 0.3s ease;
+}
+
+/*testimonials*/
+.testimonials-container {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.testimonials-container div {
+    display: inline-block;
+}
+
+.customer-testimonial {
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}
+
+/*blogs*/
+.blogs-container {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+
+.blog-content {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    padding: 10px;
+    background-color: seashell;
+    vertical-align: top;
+}
+
+.blog-content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*contact*/
+hr {
+    width: 95%;
+    border: 2px solid rgb(99, 66, 17);
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.contact {
+    width: 400px;
+    height: auto;
+    background-color: ivory;
+    padding: 25px;
+}
+.address {
+    width: 400px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 25px;
+}
+
+/* Home Button */
+.home-btn {
+  position: fixed;      /* stays in the same place even on scroll */
+  top: 50px;         /* distance from bottom */
+  right: 10px;          /* distance from right */
+  width: 50px;          /* size of button */
+  height: 50px;
+  background-color: #FF6600; /* standout color */
+  color: white;
+  border: none;
+  border-radius: 50%;    /* makes it circular */
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;     /* center the emoji vertically */
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;         /* stays on top of other elements */
+  transition: 0.5s;
+}
+
+.home-btn:hover {
+  background-color: #e55b00;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 /* initial CSS
