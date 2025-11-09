@@ -210,7 +210,6 @@ ul a:hover {
     margin: 100px auto;
 }
 
-
 .blog-content {
     display: inline-block;
     width: 250px;
@@ -219,6 +218,12 @@ ul a:hover {
     padding: 10px;
     background-color: seashell;
     vertical-align: top;
+}
+
+.blog-content:hover {
+    background-color: lightgoldenrodyellow;
+    transform: scale(1.1);
+    transition: transform 0.3s, background-color 0.3s ease;
 }
 
 .blog-content img {
