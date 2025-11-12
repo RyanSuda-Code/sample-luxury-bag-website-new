@@ -288,7 +288,7 @@ hr {
 /*mobile and tablet*/
 
 /*mobile query*/
-/*header*/
+/*m-header*/
 @media (max-width: 450px) {
 
 * { /*helps show which elemnt cross the border*/
@@ -338,8 +338,27 @@ ul a {
     padding: 4px 10px;
 }
 
-/*home container*/
+/*m-home-container*/
+.home-container {
+    width: auto;
+}
 
+.welcome {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.welcome-section {
+    width: 400px;
+    height: auto;
+}
+
+/*m-about-us container*/
 
 }
 
