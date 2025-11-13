@@ -359,8 +359,77 @@ ul a {
 }
 
 /*m-about-us container*/
+.emp-img {
+    width: 100%;
+    gap: 10px;
+}
+
+.e-img1, .e-img2, .e-img3 {
+    height: 200px;
+    width: auto;
+}
+
+.about-us-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-text {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    text-align: justify;
+}
+
+/*m-testimonials*/
+.testimonials-container {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.testimonials-container div {
+    display: inline-block;
+    width: 100%;
+}
+
+.customer-testimonial {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*contact*/
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
 }
+.contact {
+    width: 98%;
+    height: auto;
+    padding: 0;
+    margin: auto;/*centers the section inside the container*/
+}
+
+.address {
+    width: 98%;
+    height: auto;
+    padding: 0;
+    margin: auto;/*centers the section inside the container*/
+}
+
+}
+
+/*Tablet Device responsiveness*/
 
 
 
