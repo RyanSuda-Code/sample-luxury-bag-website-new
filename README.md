@@ -8,6 +8,28 @@ Technologies Used
 - HTML
 - CSS
 
+## Code Snippets
+
+```css
+    * { 
+  outline: 1px solid red;
+} 
+```
+This is a debugging trick.
+Developers use it to:
+
+    See the exact size of every element
+
+    Check layout issues
+
+    Inspect spacing, overflow, unexpected gaps
+
+    Visualize block/inline element
+
+Screenshot of the Outline
+![](./images/Screenshot%202025-11-15%20220411.png)
+![](./images/Screenshot%202025-11-15%20220417.png)
+
 [How to View](https://ryansuda-code.github.io/sample-luxury-bag-website-new/)
 
 [GitHub Profile](https://github.com/RyanSuda-Code)
